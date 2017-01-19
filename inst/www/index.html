@@ -77,17 +77,18 @@
   </div>
 
 </fieldset>
-    <br />
   <div id="Page1" class="page" style="">
     <span3>*******Non-ensemble is selcted **********</span3>
     <br/> --------------------------------------------
 
-       
-    <h4>IV. Choose window length </h4>
+       <fieldset>
+    <legend> IV. Choose window length </legend>
     <input type="number" id="nfield" value="2">
     <br />
     <br /> --------------------------------------------
-    <h4>V. Run Naive k-tuple </h4>
+          </fieldset>
+     <fieldset>
+    <legend>V. Run Naive k-tuple </legend>
     <button id="buttondisdfr" type="button">calculate dissimilarity via Naive k-tuple</button>
     <span2>
       <pre><code id="outputdisdfr"></code></pre>
@@ -97,7 +98,9 @@
     <button id="buttondencirdisdfr" type="button">Generate circle Dend.</button>
 
     <div id="plotdisdfr"></div>
-    --------------------------------------------
+   
+    </fieldset>
+   
     <h4>VI. Run CVTRee K-tuple  </h4>
     <button id="buttondiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
