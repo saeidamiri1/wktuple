@@ -76,12 +76,17 @@
   <div id="Page1" class="page" style="">
     <span3>*******Non-ensemble is selcted **********</span3>
     <br/> --------------------------------------------
-
+      <form>
+      <fieldset>
     <legend> Step IV- Choose window length </legend>
     <input type="number" id="nfield" value="2">
     <br />
+      </fieldset>
+       </form>
     <br /> --------------------------------------------
-    <legend> Step V. Run Nive k-tuple </legend>
+      <form>
+      <fieldset>
+     <legend> Step V. Run Nive k-tuple </legend>
     <button id="buttondisdfr" type="button">calculate dissimilarity via Naive k-tuple</button>
     <span2>
       <pre><code id="outputdisdfr"></code></pre>
@@ -91,7 +96,12 @@
     <button id="buttondencirdisdfr" type="button">Generate circle Dend.</button>
 
     <div id="plotdisdfr"></div>
+      </fieldset>
+       </form> 
+     <br />
     --------------------------------------------
+         <form>
+      <fieldset>
     <legend> Step VI- Run CVTREE </legend>
     <button id="buttondiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
@@ -101,7 +111,11 @@
     <button id="buttondendiscvtree" type="button">Generate Dend.</button>
     <button id="buttondencirdiscvtree" type="button">Generate circle Dend.</button>
     <div id="plotdiscvtree"></div>
-    <br> --------------------------------------------
+       </fieldset>
+             </form>
+     <br> --------------------------------------------
+        <form>
+      <fieldset>
     <legend> Step VII- Run lktuple </legend>
     <button id="buttondislk" type="button">calculate dissimilarity</button>
     <span2>
@@ -112,7 +126,8 @@
     <button id="buttondendislk" type="button">Generate Dend.</button>
     <button id="buttondencirdislk" type="button">Generate circle Dend.</button>
     <div id="plotdislk"></div>
-
+      </fieldset>
+           </form>
 
   </div>
   <div id="Page2" class="page" style="display:none">
@@ -120,6 +135,8 @@
       **** Ensemble is selected*****
     </span3>
     <br /> --------------------------------------------
+     <form> 
+     <fieldset >
     <legend> Step IV- Run Regular k-tuple </legend>
     <button id="buttonendisdfr" type="button">calculate dissimilarity via Regular k-tuple</button>
     <span2>
@@ -131,6 +148,11 @@
 
     <div id="plotendisdfr"></div>
     --------------------------------------------
+           </fieldset>
+       </form>
+     <br />
+     <form>
+      <fieldset>
     <legend> Step V- Run CVTREE </legend>
     <button id="buttonendiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
@@ -141,9 +163,11 @@
     <button id="buttonendencirdiscvtree" type="button">Generate Ens circle Dend.</button>
 
     <div id="plotendiscvtree"></div>
+    </fieldset>
+       </form>
     <br> --------------------------------------------
        <form>
-     <fieldset >
+     <fieldset>        
     <legend> Step VI- Run lktuple </legend>
     <button id="buttonendislk" type="button">calculate Ens dissimilarity</button>
     <span2>
