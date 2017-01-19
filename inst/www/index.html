@@ -34,14 +34,16 @@
 </fieldset>
        </form>
      <br />
+       <form>
          <fieldset >
             
   <legend> Step II- Choose the labels </legend> The default labels are numeric values, otherwise the labels should be defined in the following box
   <br />
   <input type="text" id="label1" value=" c('Ape','Baboon','Chimpanzee','Gibbon','Gorilla','Human','Mouse','Rat','SuOrangutan')">
   <br>
-  <br> --------------------------------------------
+  <br> 
             </fieldset >
+          </form>
   <script>
     function show(elementID) {
       var ele = document.getElementById(elementID);
@@ -83,7 +85,7 @@
     <br />
       </fieldset>
        </form>
-    <br /> --------------------------------------------
+       <br/> 
       <form>
       <fieldset>
      <legend> Step V. Run Nive k-tuple </legend>
@@ -98,11 +100,11 @@
     <div id="plotdisdfr"></div>
       </fieldset>
        </form> 
-     <br />
-    --------------------------------------------
-         <form>
-      <fieldset>
-    <legend> Step VI- Run CVTREE </legend>
+     <br/>
+     <br/>
+     <form>
+     <fieldset>
+    <legend> Step VI- Run CVTree </legend>
     <button id="buttondiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
       <pre><code id="outputdiscvtree"></code></pre>
@@ -112,8 +114,9 @@
     <button id="buttondencirdiscvtree" type="button">Generate circle Dend.</button>
     <div id="plotdiscvtree"></div>
        </fieldset>
-             </form>
-     <br> --------------------------------------------
+        </form>
+     <br/> 
+     <br/>
         <form>
       <fieldset>
     <legend> Step VII- Run lktuple </legend>
@@ -121,7 +124,7 @@
     <span2>
       <pre><code id="outputdislk"></code></pre>
     </span2>
-    <br />
+    <br/>
 
     <button id="buttondendislk" type="button">Generate Dend.</button>
     <button id="buttondencirdislk" type="button">Generate circle Dend.</button>
@@ -134,7 +137,8 @@
     <span3>
       **** Ensemble is selected*****
     </span3>
-    <br /> --------------------------------------------
+    <br /> 
+     <br />
      <form> 
      <fieldset >
     <legend> Step IV- Run Regular k-tuple </legend>
