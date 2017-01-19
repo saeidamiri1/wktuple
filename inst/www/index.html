@@ -3,23 +3,22 @@
 
 
 <head>
-<title>Run wkTuple</title>
+   <title>Run wkTuple</title>
    <script type="text/javascript" src="dependencies/jquery-1.10.2.min.js"> </script>
    <script type="text/javascript" src="dependencies/opencpu-0.4.js"> </script>
   </head>
 <body class="indent">  
+   
 <div>
  <h2>  Multiple Sequence Free-Alignment (MSFA)</h2> 
  Alignment-free methods are based on word-counting, which only considers the frequency of joint neighboring words without any correction of their locations in the sequence and it is of interest to track the position of nucleotides in sequence and
   use the underlying distribution of data. MSFSA is generally the alignment-free of three or more biological sequences (DNA) of similar\different length. The result is a dendrogram that can be used to draw the inference and diagnosis
   the evolutionary relationships between the sequences studied.
-
   <br />
   <br /> --------------------------------------------
   <h4>I. Uploead the Fasta file</h4>
     Save all sequences in a single file fasta and upload it
   <input type="file" id="csvfile">
-  <br />
   <br />
 
   <button id="submitfile" type="button">Submit file</button>
@@ -70,7 +69,7 @@
     <br />
     <br /> --------------------------------------------
     <h4>V. Run Naive k-tuple </h4>
-    <button id="buttondisdfr" type="button">calculate dissimilarity via Regular k-tuple</button>
+    <button id="buttondisdfr" type="button">calculate dissimilarity via Naive k-tuple</button>
     <span2>
       <pre><code id="outputdisdfr"></code></pre>
     </span2>
@@ -80,7 +79,7 @@
 
     <div id="plotdisdfr"></div>
     --------------------------------------------
-    <h4>VI. Run CVTREE </h4>
+    <h4>VI. Run CVTRee K-tuple  </h4>
     <button id="buttondiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
       <pre><code id="outputdiscvtree"></code></pre>
@@ -90,7 +89,7 @@
     <button id="buttondencirdiscvtree" type="button">Generate circle Dend.</button>
     <div id="plotdiscvtree"></div>
     <br> --------------------------------------------
-    <h4>VII. Run lktuple </h4>
+    <h4>VII. Run Locational K-tuple </h4>
     <button id="buttondislk" type="button">calculate dissimilarity</button>
     <span2>
       <pre><code id="outputdislk"></code></pre>
@@ -109,7 +108,7 @@
     </span3>
     <br /> --------------------------------------------
     <h4>IV. Run Regular k-tuple </h4>
-    <button id="buttonendisdfr" type="button">calculate dissimilarity via Regular k-tuple</button>
+    <button id="buttonendisdfr" type="button">calculate dissimilarity via Naive k-tuple</button>
     <span2>
       <pre><code id="outputendisdfr"></code></pre>
     </span2>
@@ -119,26 +118,26 @@
 
     <div id="plotendisdfr"></div>
     --------------------------------------------
-    <h4>V. Run CVTREE </h4>
+    <h4>V. Run CVTRee k-tuple  </h4>
     <button id="buttonendiscvtree" type="button">calculate dissimilarity via CVTree</button>
     <span2>
       <pre><code id="outputendiscvtree"></code></pre>
     </span2>
     <br>
-    <button id="buttonendendiscvtree" type="button">Generate Ens Dend.</button>
-    <button id="buttonendencirdiscvtree" type="button">Generate Ens circle Dend.</button>
+    <button id="buttonendendiscvtree" type="button">Generate Ens. Dend.</button>
+    <button id="buttonendencirdiscvtree" type="button">Generate Ens. circle Dend.</button>
 
     <div id="plotendiscvtree"></div>
     <br> --------------------------------------------
     <h4>VI. Run lktuple </h4>
-    <button id="buttonendislk" type="button">calculate Ens dissimilarity</button>
+    <button id="buttonendislk" type="button">calculate Ens. dissimilarity</button>
     <span2>
       <pre><code id="outputendislk"></code></pre>
     </span2>
     <br />
 
-    <button id="buttonendendislk" type="button">Generate Ens Dend.</button>
-    <button id="buttonendencirdislk" type="button">Generate Ens circle Dend.</button>
+    <button id="buttonendendislk" type="button">Generate Ens. Dend.</button>
+    <button id="buttonendencirdislk" type="button">Generate Ens. circle Dend.</button>
     <div id="plotendislk"></div>
 
   </div>
@@ -147,7 +146,7 @@
 
     <small>
 <span4>
-Cite: Amiri, S and Ivo, D. (2017).  wkTuple: A Web Interface for Alignment-Free Multiple Sequence Analysis.
+Cite: Amiri, S. and Ivo, D. (2017).  A toolkit for Multiple Free-Alignment Sequence Analysis via R and web-interface.
 <br>
     R script: https://sites.google.com/site/saeidamiri1/codes/faktuple
     <br>
@@ -162,7 +161,6 @@ License: GPL-3.0
   </p>
 
     
- 
     
     <style> 
         span1 {
@@ -570,8 +568,8 @@ $("#buttonendencirdiscvtree").click(function() {
   });
 });
 
-
  // The program is written by Saeid Amiri.  
   </script>
-        </body>
-  </html>
+
+   </body>
+</html>
