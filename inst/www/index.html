@@ -27,7 +27,7 @@
         <legend> Step I- Uploead the Fasta file </legend>
      
     Save all sequences in a single file fasta and upload it
-  <input type="file" id="csvfile">
+  <input type="file" id="fastafile">
   <br />
 
   <button id="submitfile" type="button">Submit file</button> 
@@ -295,7 +295,7 @@ legend {
   
    <script>
       alert = function() {};
-     //because read.csv is in utils
+
 var convertfile;
 var matdislk;
 var matdisdfr;
@@ -307,7 +307,7 @@ $("#submitfile").on("click", function() {
 
   //arguments
   var myheader = $("#header").val() == "true";
-  var myfile = $("#csvfile")[0].files[0];
+  var myfile = $("#fastafile")[0].files[0];
 
   if (!myfile) {
     alert("No file selected.");
